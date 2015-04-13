@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'statuses'
+  root 'statuses#index'
   get 'statuses', to: 'statuses#index', page: 1
   get 'statuses/page/:page', to: 'statuses#index'
 
